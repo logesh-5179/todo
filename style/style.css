@@ -1,36 +1,41 @@
-
-
-
 .card {
     border: 1px solid black;
     width: 40%;
-    margin: 170px;
-    padding-left: 20px;
-    margin-right: 60px;
+    margin: 170px auto; 
+    padding: 20px;
     box-shadow: 0 1px 2px 0;
     background-color: black;
     color: aliceblue;
-    
 }
-.form{
+
+.card h1 {
+    text-align: center;
+}
+
+.form {
     background-color: black;
-    color: rgb(10, 9, 9);
-    height: 100px;
-    padding: 10px;
     color: aliceblue;
-   
-    
+    padding: 10px;
 }
-form label{
-    padding-top: 100px;
+form {
+    display: flex;
+    flex-direction: column;
 }
-input{
-    display: inline;
-    
-    padding-top: 100px;
-    height: 70px;
-    color:aliceblue
+
+form .cont1, form .cont2, form .cont3 {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
 }
-.cont2,.cont3 {
-    text-decoration: line-through;   
+
+form label {
+    margin-left: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
 }
